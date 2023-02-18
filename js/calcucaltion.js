@@ -6,6 +6,7 @@ function getInputFieldById(input){
     //inputValue.value = '';
     return inputValueNumber;
 }
+//Area [multiplication of Two Number]
 
 // function for Triangle Area. 
 document.getElementById('triangle-btn').addEventListener('click',function(){
@@ -14,4 +15,22 @@ document.getElementById('triangle-btn').addEventListener('click',function(){
 
     const triangleArea = 0.5 * triangleBase * triangleHeight;
     console.log(triangleArea);
+})
+
+//function for Rectangle Area.
+document.getElementById('rectangle-btn').addEventListener('click', function(){
+    const rectangleWidth = getInputFieldById('rectangle-w');
+    const rectangleLength = getInputFieldById('rectangle-l');
+
+    const rectangleArea = rectangleLength * rectangleWidth;
+    console.log(rectangleArea);
+})
+
+//function for parallelogram Area.
+document.getElementById('parallelogram-btn').addEventListener('click', function(){
+    const parallelogramBase = getInputFieldById('parallelogram-b');
+    const parallelogramHight = getInputFieldById('parallelogram-h');
+
+    const parallelogramArea = parallelogramBase * parallelogramHight;
+    console.log(parallelogramArea);
 })
