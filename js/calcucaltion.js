@@ -6,13 +6,11 @@ function getInputFieldById(input){
     //inputValue.value = '';
     return inputValueNumber;
 }
-// Function for Set Element in the display the display
-/* function setElementById(elementId, newValue){
-    const newScreenValue = document.getElementById(elementId);
-    newScreenValue.innerText = newValue;
-} */
+// blog button linked to Blog.html
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = 'blog.html';
+})
 
-//Area [multiplication of Two Number]
 
 // function for Triangle Area. 
 document.getElementById('triangle-btn').addEventListener('click',function(){

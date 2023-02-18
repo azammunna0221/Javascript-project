@@ -33,7 +33,7 @@
             <div class="bg-blue-200 flex justify-between m-8 p-4 rounded-2xl ">
                 <h1 class="font-inter font-bold text-3xl md:text-5xl">Interactive <br><span class="text-2xl md:text-4xl font-semibold text-gray-500">Geometry Genius</span> </h1>
                 <h2></h2>
-                <button class="bg-blue-500 hover:bg-blue-400 my-6 px-7 rounded-xl">Blog</button>
+                <button id="blog-btn" class="bg-blue-500 hover:bg-blue-400 my-6 px-7 rounded-xl">Blog</button>
             </div>
         </nav>
     </header>
@@ -42,58 +42,58 @@
         <div class="flex flex-col md:flex-row md:m-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mr-4 w-auto md:w-9/12 ">
                 <!-- Triangle ------------ -->
-                <div class="text-center bg-slate-100 h-auto">
+                <div class="text-center bg-slate-100 hover:bg-red-300 h-auto">
                     <img class="mx-auto my-6" src="images/triangle.png" >
                     <h3 class="font-bold text-2xl font-interr">Triangle</h3>
                     <p class="mb-4">Area (A) = 0.5 X b X h</p>
                     <input id="triangle-b" class="w-3/12 pl-3" type="text" placeholder="b">cm 
                     <input id="triangle-h" class="w-3/12 pl-3" type="text" placeholder="h">cm<br>
-                    <button id="triangle-btn" class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                    <button id="triangle-btn" class="bg-blue-400 hover:bg-blue-500 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
                 </div>
                 <!-- Rectangle------------ -->
-                <div class="text-center bg-slate-100 h-auto ">
+                <div class="text-center bg-slate-100 hover:bg-orange-300 h-auto ">
                     <img class="mx-auto my-6" src="images/rectangle.png" >
                     <h3 class="font-bold text-2xl font-interr">Rectangle</h3>
                     <p class="mb-4">Area (A) =  w X l</p>
                     <input id="rectangle-w" class="w-3/12 pl-3" type="text" placeholder="w">cm 
                     <input id="rectangle-l" class="w-3/12 pl-3" type="text" placeholder="l">cm<br>
-                    <button id="rectangle-btn" class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                    <button id="rectangle-btn" class="bg-blue-400 hover:bg-blue-500  text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
                 </div>
                 <!-- parallelogram--- -->
-                <div class="text-center bg-slate-100 h-auto ">
+                <div class="text-center bg-slate-100 hover:bg-amber-300 h-auto ">
                     <img class="mx-auto my-6" src="images/parallelogram.png" >
                     <h3 class="font-bold text-2xl font-interr">Parallelogram</h3>
                     <p class="mb-4">Area (A) = b X h</p>
                     <input id="parallelogram-b" class="w-3/12" type="text" placeholder="b">cm 
                     <input id="parallelogram-h" class="w-3/12" type="text" placeholder="h">cm<br>
-                    <button id="parallelogram-btn" class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                    <button id="parallelogram-btn" class="bg-blue-400 hover:bg-blue-500  text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
                 </div>
                 <!-- Rhombus  -->
-                <div class="text-center bg-slate-100 h-auto ">
+                <div class="text-center bg-slate-100 hover:bg-lime-200 h-auto ">
                     <img class="mx-auto my-6" src="images/rhombus.png" >
                     <h3 class="font-bold text-2xl font-interr">Rhombus</h3>
                     <p class="mb-4">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
                     <input id="rhombus-d1" class="w-3/12" type="text" placeholder="d1">cm 
                     <input id="rhombus-d2" class="w-3/12" type="text" placeholder="d2">cm<br>
-                    <button id="rhombus-btn" class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                    <button id="rhombus-btn" class="bg-blue-400 hover:bg-blue-500  text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
                 </div>
                 <!-- Pentagon -->
-                <div class="text-center bg-slate-100 h-auto ">
+                <div class="text-center bg-slate-100 hover:bg-emerald-200 h-auto ">
                     <img class="mx-auto my-6" src="images/pentagon.png" >
                     <h3 class="font-bold text-2xl font-interr">Pentagon</h3>
                     <p class="mb-4">Area (A) = 0.5 X p X b</p>
                     <input id="pentagon-p" class="w-3/12" type="text" placeholder="p">cm 
                     <input id="pentagon-b" class="w-3/12" type="text" placeholder="b">cm<br>
-                    <button id="pentagon-btn" class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                    <button id="pentagon-btn" class="bg-blue-400 hover:bg-blue-500  text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
                 </div>
                 <!-- ellipse -->
-                <div class="text-center bg-slate-100 h-auto ">
+                <div class="text-center bg-slate-100 hover:bg-teal-400 h-auto ">
                     <img class="mx-auto my-6" src="images/ellipse.png" >
                     <h3 class="font-bold text-2xl font-interr">Ellipse</h3>
                     <p class="mb-4">Area (A) = πab</p>
                     <input id="ellipse-a" class="w-3/12" type="text" placeholder="a">cm 
                     <input id="ellipse-b" class="w-3/12" type="text" placeholder="b">cm<br>
-                    <button id="ellipse-btn" class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                    <button id="ellipse-btn" class="bg-blue-400 hover:bg-blue-500  text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
                 </div>
             </div>
             <!-- claculation display ------------------ -->
