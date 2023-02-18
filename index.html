@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Css font add  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                inter: ["Poppins", "sans-serif"],
+              },
+            },
+          },
+        };
+      </script>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <div class="bg-blue-200 flex justify-between m-8 p-4 rounded-2xl ">
+                <h1 class="font-inter font-bold text-3xl md:text-5xl">Interactive <br><span class="text-2xl md:text-4xl font-semibold text-gray-500">Geometry Genius</span> </h1>
+                <h2></h2>
+                <button class="bg-blue-500 hover:bg-blue-400 my-6 px-7 rounded-xl">Blog</button>
+            </div>
+        </nav>
+    </header>
+    <!-- cards -------------------- -->
+    <main>
+        <div class="flex flex-col md:flex-row md:m-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mr-4 w-auto md:w-9/12 ">
+                <div class="text-center bg-slate-100 h-auto">
+                    <img class="mx-auto my-6" src="images/triangle.png" >
+                    <h3 class="font-bold text-2xl font-interr">Triangle</h3>
+                    <p>Area (A) = 0.5 X b X h</p>
+                    <input class="w-3/12" type="text">cm <input class="w-3/12" type="text">cm<br>
+                    <button class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                </div>
+                <div class="text-center bg-slate-100 h-auto ">
+                    <img class="mx-auto my-6" src="images/rectangle.png" >
+                    <h3 class="font-bold text-2xl font-interr">Rectangle</h3>
+                    <p>Area (A) =  W X l</p>
+                    <input class="w-3/12" type="text">cm <input class="w-3/12" type="text">cm<br>
+                    <button class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                </div>
+                <div class="text-center bg-slate-100 h-auto ">
+                    <img class="mx-auto my-6" src="images/parallelogram.png" >
+                    <h3 class="font-bold text-2xl font-interr">Parallelogram</h3>
+                    <p>Area (A) = b X h</p>
+                    <input class="w-3/12" type="text">cm <input class="w-3/12" type="text">cm<br>
+                    <button class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                </div>
+                <div class="text-center bg-slate-100 h-auto ">
+                    <img class="mx-auto my-6" src="images/rhombus.png" >
+                    <h3 class="font-bold text-2xl font-interr">Rhombus</h3>
+                    <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                    <input class="w-3/12" type="text">cm <input class="w-3/12" type="text">cm<br>
+                    <button class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                </div>
+                <div class="text-center bg-slate-100 h-auto ">
+                    <img class="mx-auto my-6" src="images/pentagon.png" >
+                    <h3 class="font-bold text-2xl font-interr">Pentagon</h3>
+                    <p>Area (A) = 0.5 X p X b</p>
+                    <input class="w-3/12" type="text">cm <input class="w-3/12" type="text">cm<br>
+                    <button class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                </div>
+                <div class="text-center bg-slate-100 h-auto ">
+                    <img class="mx-auto my-6" src="images/ellipse.png" >
+                    <h3 class="font-bold text-2xl font-interr">Ellipse</h3>
+                    <p>Area (A) = πab</p>
+                    <input class="w-3/12" type="text">cm <input class="w-3/12" type="text">cm<br>
+                    <button class="bg-blue-400 text-white px-28 py-3 mt-4 mb-6 rounded-md font-bold text-xl">Calculate</button>
+                </div>
+            </div>
+            <div class=" bg-slate-100 h-96 w-auto mt-5 md:mt-0 md:w-80 ">
+                <h1 class="text-center font-semibold text-lg pt-10"> <u>Area Calculation</u></h1>
+                <ol class="ml-5">
+                    <li>Triangle</li>
+                    <li>Triangle</li>
+                    <li>Triangle</li>
+                    <li>Triangle</li>
+                </ol>
+            </div>
+
+        </div>
+    </main>
 </body>
+
 </html>
