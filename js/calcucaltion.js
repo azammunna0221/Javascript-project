@@ -21,8 +21,8 @@ document.getElementById('triangle-btn').addEventListener('click',function(){
 
     const triangleArea = 0.5 * triangleBase * triangleHeight;
 
-    const displayValue = document.getElementById('list-item1');
-    displayValue.innerText = triangleArea;
+    const displayValueTriangle = document.getElementById('list-item1');
+    displayValueTriangle.innerText = triangleArea;
 
     //console.log(triangleArea);
 })
@@ -34,8 +34,8 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
 
     const rectangleArea = rectangleLength * rectangleWidth;
     
-    const displayValue = document.getElementById('list-item2');
-    displayValue.innerText = triangleArea;
+    const displayValueRectangle = document.getElementById('list-item2');
+    displayValueRectangle.innerText = rectangleArea;
 })
 
 //function for parallelogram Area.
@@ -45,8 +45,8 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
 
     const parallelogramArea = parallelogramBase * parallelogramHight;
     
-    const displayValue = document.getElementById('list-item3');
-    displayValue.innerText = triangleArea;
+    const displayValueParallelogram = document.getElementById('list-item3');
+    displayValueParallelogram.innerText = parallelogramArea;
 })
 
 //function for rhombus Area.
@@ -56,8 +56,8 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
 
     const rhombusArea = 0.5 * rhombusd1 * rhombusd2;
 
-    const displayValue = document.getElementById('list-item4');
-    displayValue.innerText = rhombusArea;
+    const displayValueRhombus = document.getElementById('list-item4');
+    displayValueRhombus.innerText = rhombusArea;
 })
 
 //function for pentagon Area.
@@ -67,8 +67,8 @@ document.getElementById('pentagon-btn').addEventListener('click', function(){
 
     const pentagonArea = 0.5 * pentagonParameter * pentagonBase;
 
-    const displayValue = document.getElementById('list-item5');
-    displayValue.innerText = pentagonArea;
+    const displayValuePentagon = document.getElementById('list-item5');
+    displayValuePentagon.innerText = pentagonArea;
 })
 
 //function for ellipse Area.
@@ -78,6 +78,6 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
 
     const ellipseArea = 3.1416 * ellipseA * ellipseB;
 
-    const displayValue = document.getElementById('list-item6');
-    displayValue.innerText = ellipseArea;
+    const displayValueEllipse = document.getElementById('list-item6');
+    displayValueEllipse.innerText = ellipseArea;
 })
