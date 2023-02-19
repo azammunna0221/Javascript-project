@@ -8,7 +8,7 @@ function getInputFieldById(input) {
     inputValue.value = '';
     return inputValueNumber;
 }
-//function for display area out put in the table;
+//function for display area output in the Area-Calculation table;
 
 function setDataToAreaCalculation(element,area){
 
