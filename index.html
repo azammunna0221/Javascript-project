@@ -30,17 +30,18 @@
 <body>
     <header>
         <nav>
-            <div class="bg-blue-200 flex justify-between m-8 p-4 rounded-2xl ">
+            <div class="bg-blue-200 flex justify-between m-8 p-4 rounded-md ">
                 <h1 class="font-inter font-bold text-3xl md:text-5xl">Interactive <br><span class="text-2xl md:text-4xl font-semibold text-gray-500">Geometry Genius</span> </h1>
                 <h2></h2>
-                <button id="blog-btn" class="bg-blue-500 hover:bg-blue-400 my-6 px-7 rounded-xl">Blog</button>
+                <button id="blog-btn" class="bg-blue-500 hover:bg-blue-400 my-6 px-7 rounded-md">Blog</button>
             </div>
         </nav>
     </header>
     <!-- cards -------------------- -->
     <main>
-        <div class="flex flex-col md:flex-row md:m-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mr-4 w-auto md:w-9/12 ">
+        <div class="flex flex-col md:flex-row m-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mr-4 w-auto 
+            md:w-9/12 ">
                 <!-- Triangle ------------ -->
                 <div class="text-center bg-slate-100 hover:bg-red-300 h-auto">
                     <img class="mx-auto my-6" src="images/triangle.png" >
@@ -99,15 +100,21 @@
             <!-- claculation display ------------------ -->
             <div class=" bg-slate-100 h-96 w-auto mt-5 md:mt-0 md:w-80 ">
                 <h1 class="text-center font-semibold text-lg pt-10"> <u>Area Calculation</u></h1>
-                <ol id="lists" class="ml-5">
+                <table id="table-container" class="mx-auto">
+                    <!-- <tr>
+                        <td class="px-4">No</td>
+                        <td class="px-4">area</td>
+                        <td class="px-4"><button class="px-1 py-2 bg-blue-300">convert to m<sup>2</sup> </button></td>
+                    </tr> -->
+                </table>
+                <!-- <ol id="lists" class="ml-5">
                     <li>1. Triangle  <span id="list-item1"> </span>cm<sup>2</sup> </li>
                     <li>2. Rectangle  <span id="list-item2"> </span>cm<sup>2</sup> </li>
                     <li>3. parallelogram  <span id="list-item3"> </span>cm<sup>2</sup></li>
                     <li>4. Rhombus  <span id="list-item4"> </span>cm<sup>2</sup></li>
                     <li>5. Pentagon  <span id="list-item5"> </span>cm<sup>2</sup></li>
                     <li>6. Ellipse  <span id="list-item6"> </span>cm<sup>2</sup></li>
-                    
-                </ol>
+                </ol> -->
             </div>
 
         </div>
